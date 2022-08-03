@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Bitmap';
+    src: url('/Users/valia/Documents/GitHub/loveletter-01/font/BoutiqueBitmap7x7.ttf');
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 20, 20);
+}
+
+a {
+    color:rgb(100, 255, 247);
+}
+
+a:hover {
+    color:rgb(0, 180, 171);
+}
+
+h1 {
+    font-family: Bitmap;
+    font-size: 16pt;
+    line-height: 24pt;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1::after {
+    content: "|";
+    animation: blink-caret .6s step-end infinite;
+}
+
+@keyframes blink-caret {
+from, to { color: transparent }
+50% { color: rgb(255, 255, 255) }
+}
