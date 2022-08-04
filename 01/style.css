@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Bitmap';
-    src: url('font/BoutiqueBitmap7x7.ttf');
+    src: url('../font/BoutiqueBitmap7x7.ttf');
 }
   
 body {
