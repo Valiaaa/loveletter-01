@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+	<title>Love Letter 01</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <div class="black"></div>
+    <img src="../img/pc1.png" class="pc" id="pc1">
+    <h1 class="t1"></h1>
+
+	<script>
+        $( "#pc1" ).click(function() {
+            $("h1").css({opacity:1});
+            setTimeout(function() {
+		        var typed = new Typed(".t1", {
+			    strings: ["在這裡，<br>我們遠離一切壓力，<br>只<button id=‘t2’>關注</button>著當下，<br>和明天；"],
+			
+                typeSpeed: 90,
+			    loop: false,
+		        })
+            },700);
+            $("#pc1").css({'pointer-events': 'none'});
+        });
+	</script>
+</body>
+</html>
