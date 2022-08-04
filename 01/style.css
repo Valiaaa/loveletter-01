@@ -16,7 +16,8 @@ body {
 
 .black {
     background-color: rgb(20,20,20);
-    position: fixed;
+    position: absolute;
+    z-index: 2;
     width: 100vw;
     height: 200vh;
     animation: fadeout 1.5s linear;
@@ -79,8 +80,18 @@ button:hover {
 
 .pc {
     width: 460px; 
-    display: flex; 
     margin:auto; 
-    margin-top: 380px; 
+    top: 380px; 
+    left: 0;
+    right: 0;
     cursor: pointer;
+    position: absolute;
+}
+
+.img-container {
+    position: relative;
+}
+
+#pc2 {
+    display: none;
 }
