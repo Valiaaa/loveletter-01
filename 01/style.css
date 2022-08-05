@@ -106,7 +106,7 @@ button:hover {
     position: relative;
 }
 
-#pc2 {
+#pc2,#pc3{
     display: none;
 }
 
