@@ -21,12 +21,14 @@
     <div class="img-container">
     <img src="../img/pc1.png" class="pc" id="pc1">
     <img src="../img/pc2.png" class="pc" id="pc2">
+    <img src="../img/can.png" id="can">
     </div>
     <h1 class="t1"></h1>
+    <h1 class="t2"></h1>
 
 	<script>
         $("#pc1").click(function() {
-            $("h1").css({opacity:1});
+            $(".t1").css({opacity:1});
             setTimeout(function() {
 		        var typed = new Typed(".t1", {
 			    strings: ["在这里，<br>我们远离一切压力，<br>只<button id=‘w1’>关注</button>着当下，<br>和明天；"],
@@ -40,6 +42,24 @@
 
         $(".t1").click(function() {
             $("#pc2").fadeIn();
+        });
+
+        $("#pc2").click(function() {
+            $(".t1").hide().empty;
+            $(".t2").css({opacity:1});
+            setTimeout(function() {
+		        var typed = new Typed(".t2", {
+			    strings: ["我们<button id=‘w2’>期待</button>着每一部电影，<br>和每一次触碰；"],
+			
+                typeSpeed: 90,
+			    loop: false,
+		        })
+            },1000);
+            $("#pc2").css({'pointer-events': 'none'});
+        });
+
+        $(".t2").click(function() {
+            $("#can").fadeIn();
         });
 	</script>
 </body>

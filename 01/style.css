@@ -105,3 +105,19 @@ button:hover {
 #pc2 {
     display: none;
 }
+
+#can {
+    display: none;
+    width: 800px; 
+    margin:auto; 
+    top: 680px; 
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#can:hover {
+    width: 840px;
+    top: 670px;
+}
