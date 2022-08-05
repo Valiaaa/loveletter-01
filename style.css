@@ -1,31 +1,33 @@
 @font-face {
-    font-family: 'Bitmap';
-    src: url('font/BoutiqueBitmap7x7.ttf');
+    font-family: 'Fangzheng';
+    src: url('font/FangZhengFangSong-GBK-1.ttf');
 }
   
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(20, 20, 20);
+    background-color: white;
 }
 
 a {
-    color:rgb(100, 255, 247);
+    color:rgb(104, 135, 223);
 }
 
 a:hover {
-    color:rgb(0, 180, 171);
+    color:rgb(70, 99, 180);
 }
 
 h1 {
-    font-family: Bitmap;
+    font-family: ff-more-web-pro-condensed, Fangzheng, serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16pt;
-    line-height: 24pt;
+    line-height: 20pt;
     position: absolute;
     top: 38%;
     width: 100%;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(41,41,41);
 }
 
 h1::after {
@@ -35,16 +37,18 @@ h1::after {
 
 @keyframes blink-caret {
 from, to { color: transparent }
-50% { color: rgb(255, 255, 255) }
+50% { color: rgb(41,41,41) }
 }
 
 button {
-    font-family: Bitmap;
+    font-family: ff-more-web-pro-condensed, Fangzheng, serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16pt;
-    line-height: 24pt;
+    line-height: 20pt;
     border: none;
     background-color: transparent;
-    color:rgb(100, 255, 247);
+    color:rgb(104, 135, 223);
     padding: 0;
     text-decoration: underline;
     outline: none;
@@ -53,5 +57,5 @@ button {
   }
 
 button:hover {
-    color:rgb(0, 180, 171);
+    color:rgb(70, 99, 180);
 }
