@@ -15,6 +15,7 @@ body {
 
 a {
     color:rgb(104, 135, 223);
+    cursor: url('point.png'), auto;
 }
 
 a:hover {
