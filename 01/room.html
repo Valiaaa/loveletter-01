@@ -25,6 +25,7 @@
     </div>
     <h1 class="t1"></h1>
     <h1 class="t2"></h1>
+    <h1 class="t3"></h1>
 
 	<script>
         $("#pc1").click(function() {
@@ -46,6 +47,7 @@
 
         $("#pc2").click(function() {
             $(".t1").hide().empty;
+            $(".t3").hide();
             $(".t2").css({opacity:1});
             setTimeout(function() {
 		        var typed = new Typed(".t2", {
@@ -60,6 +62,20 @@
 
         $(".t2").click(function() {
             $("#can").fadeIn();
+        });
+
+        $("#can").click(function() {
+            $(".t2").hide().empty;
+            $(".t3").show().css({opacity:1});
+            setTimeout(function() {
+		        var typed = new Typed(".t3", {
+			    strings: ["我们<button id=‘w2’>感受</button>着彼此的气息，<br>和和很久未曾到来的心的悸动。"],
+			
+                typeSpeed: 90,
+			    loop: false,
+		        })
+            },1000);
+            $("#can").css({'pointer-events': 'none'});
         });
 	</script>
 </body>

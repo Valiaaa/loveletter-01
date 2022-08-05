@@ -2,7 +2,11 @@
     font-family: 'Fangzheng';
     src: url('font/FangZhengFangSong-GBK-1.ttf');
 }
-  
+
+* {
+    cursor: url('normal.png'), auto;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -52,7 +56,7 @@ button {
     padding: 0;
     text-decoration: underline;
     outline: none;
-    cursor: pointer;
+    cursor: url('point.png'), auto;
     margin-left: -0.5px;
   }
 

@@ -3,6 +3,10 @@
     src: url('../font/FangZhengFangSong-GBK-1.ttf');
 }
 
+* {
+    cursor: url('../normal.png'),auto;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -74,7 +78,7 @@ button {
     padding: 0;
     text-decoration: underline;
     outline: none;
-    cursor: pointer;
+    cursor: url('../point.png'), auto;
     margin-left: -0.5px;
     margin-right: -0.5px;
   }
@@ -89,7 +93,7 @@ button:hover {
     top: 360px; 
     left: 0;
     right: 0;
-    cursor: pointer;
+    cursor: url('../point.png'), auto;
     position: absolute;
 }
 
@@ -113,7 +117,7 @@ button:hover {
     top: 660px; 
     left: 0;
     right: 0;
-    cursor: pointer;
+    cursor: url('../point.png'), auto;
     position: absolute;
 }
 
