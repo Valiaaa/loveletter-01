@@ -66,6 +66,10 @@ from, to { color: transparent }
 50% { color: rgb(41,41,41) }
 }
 
+.typed-cursor {
+    display: none;
+}
+
 button {
     font-family: ff-more-web-pro-condensed, Fangzheng, serif;
     font-weight: 300;
